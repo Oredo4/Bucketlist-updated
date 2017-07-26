@@ -11,3 +11,4 @@ class Bucketlist(object):
     def view_bucketlist(self):
         if self.allbucketlists:
             return self.allbucketlists
+        
