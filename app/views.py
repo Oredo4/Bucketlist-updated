@@ -39,3 +39,4 @@ def bucketlist():
 @app.route('/additems', methods=['POST'])
 def additems():
     return render_template("additems.html")
+
