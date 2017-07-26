@@ -1,4 +1,4 @@
 # config.py
 
-# Enable Flask's debugging features. Should be False in production
+# Enable Flask's debugging features
 DEBUG = True
