@@ -27,4 +27,3 @@ class Items(object):
     def print_details(self):
         for i in self.allitems:
             print(i.name)
-            

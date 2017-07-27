@@ -32,11 +32,17 @@ def bucketlist():
 	if request.method == "POST":
 		name = request.form["bucketlist_name"]
 		bucket.create_bucketlist(name)
-		return redirect(url_for('bucketlist'))
 	instance = bucket.view_bucketlist()
 	return render_template("bucketlist.html", instance=instance)
+	
+'''@app.route('/bucketlist', methods=['GET', 'POST'])
+def delete_bucketlist():
+	if request.method == "POST":
+		name = request.form["bucketlist_name"]
+		bucket.create_bucketlist(name)
+	instance = bucket.view_bucketlist()
+	return render_template("bucketlist.html", instance=instance)'''
 
 @app.route('/additems', methods=['POST'])
 def additems():
     return render_template("additems.html")
-
